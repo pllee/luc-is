@@ -33,6 +33,8 @@ describe('Luc is', function() {
         expect(is.isNumber({})).to.be(false);
         expect(is.isNumber(0)).to.be(true);
         expect(is.isNumber(NaN)).to.be(false);
+        expect(is.isNumber(Infinity)).to.be(false);
+        expect(is.isNumber(-Infinity)).to.be(false);
     });
 
     it('isFunction', function() {
